@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array concating in JavaScript</title>
+</head>
+<body>
+    <script>
+        var a = ["rahat","majid","Aslam"];
+        /*Method 1
+        var b = a.concat("riya","madhu");
+        document.write(b);*/
+
+        // Method 2
+        var b = ["Bushra","Rahnuma"];
+        var d = ["nadia","noori"];
+        var c = a.concat(b,d);
+        document.write(c + "<br><br>");
+
+        // join 
+        var e = c.join(" / ");
+        document.write(e);
+        
+    </script>
+</body>
+</html>
