@@ -8,6 +8,8 @@
 <body>
     <h1>JavaScript promises </h1>
     <script>
+
+        // synchro 
         const ticket = new Promise(function(resolve,reject){
             const isBoarded = false;
             if(isBoarded){
@@ -22,7 +24,7 @@
             }).catch((data)=>{
                 console.log("hono ",data);
             }).finally(()=>{
-                console.log("I will always executed ")
+                console.log("I will always executed ");
             });
     </script>
 </body>
