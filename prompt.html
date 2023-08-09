@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt in JavaScript</title>
+</head>
+<body>
+    <script>
+        var per= prompt("Enter your Percentage : ");
+
+        if(per >= 80 && per <= 100){
+            document.write("Your are in Merit.");
+        }else if(per >= 60 && per < 80){
+            document.write("Your are in !st Division.");
+        }else if(per >= 45 && per < 60){
+            document.write("Your are in 2nd Division.");
+        }else if(per >= 33 && per < 45){
+            document.write("Your are in 3rd Division.");
+        }else if(per < 33){
+            document.write("Your are Fail.");
+        }else {
+            document.write("Please enter valid percentage.");
+        }
+    </script>
+</body>
+</html>
