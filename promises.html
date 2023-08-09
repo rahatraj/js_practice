@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises in JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript promises </h1>
+    <script>
+        const ticket = new Promise(function(resolve,reject){
+            const isBoarded = false;
+            if(isBoarded){
+                resolve("You are in the flight");
+            }else{
+                reject("Your flight has been cancalled ");
+            }
+        });
+        ticket
+            .then((data)=>{
+                console.log("woho",data)
+            }).catch((data)=>{
+                console.log("hono ",data);
+            }).finally(()=>{
+                console.log("I will always executed ")
+            });
+    </script>
+</body>
+</html>
